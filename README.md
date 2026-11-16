@@ -1,6 +1,6 @@
 # Ciberseguridad sin drama para Devs · Lab de logs
 
-Material del taller **"Ciberseguridad sin drama para Devs"** (GDG Pura Vida · Track@DevFest, sábado 21 de noviembre de 2026).
+Material del taller **"Ciberseguridad sin drama para Devs"** (GDG Pura Vida · DevFest, sábado 21 de noviembre de 2026).
 Aprenderás a leer **Cloud Audit Logs** como lo hace un analista de SOC, con consultas reales del Log Explorer de Google Cloud.
 
 > **Todos los datos son sintéticos** (empresa, personas e IPs ficticias). No hay nada real en este repositorio.
