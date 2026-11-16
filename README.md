@@ -1,6 +1,6 @@
 # Ciberseguridad sin drama para Devs · Lab de logs
 
-Material del taller **"Ciberseguridad sin drama para Devs"** (GDG Pura Vida · DevFest, sábado 21 de noviembre de 2026).
+Material de estudio del taller **"Ciberseguridad sin drama para Devs"** (GDG Pura Vida · DevFest 2026, sábado 21 de noviembre de 2026).
 Aprenderás a leer **Cloud Audit Logs** como lo hace un analista de SOC, con consultas reales del Log Explorer de Google Cloud.
 
 > **Todos los datos son sintéticos** (empresa, personas e IPs ficticias). No hay nada real en este repositorio.
@@ -10,8 +10,6 @@ Aprenderás a leer **Cloud Audit Logs** como lo hace un analista de SOC, con con
 1. Abre el visor: **https://lab.hidalgotechnologies.com**
 2. Pega una consulta de [`CONSULTAS.md`](CONSULTAS.md) en el cuadro y pulsa **Ejecutar consulta** (o `Ctrl+Enter`).
 3. Resuelve los **retos** del panel derecho (4 con respuesta y 2 de discusión).
-
-¿Sin internet? Descarga este repositorio y abre `visor/index.html` en tu navegador. Funciona sin servidor.
 
 ## Cómo usar el visor
 
@@ -67,13 +65,11 @@ Hazlo en un proyecto de prueba, no en producción.
 README.md          Esta guía
 CONSULTAS.md       Las consultas del taller, explicadas
 consultas.json     Las mismas consultas en JSON
-visor/             Código del visor (HTML + JS, sin dependencias) y los logs sintéticos
-pruebas/           Resultados de comparar las consultas en GCP real y en el visor
 ```
 
 ## Verificación
 
-Cada consulta fue ejecutada en un proyecto real de Google Cloud y en el visor sobre los **mismos eventos**; devolvieron exactamente los mismos resultados. Detalle en [`pruebas/tabla_comparacion.md`](pruebas/tabla_comparacion.md).
+Cada consulta fue ejecutada en un proyecto real de Google Cloud y en el visor sobre los **mismos eventos**; devolvieron exactamente los mismos resultados.
 
 ## Aviso
 
