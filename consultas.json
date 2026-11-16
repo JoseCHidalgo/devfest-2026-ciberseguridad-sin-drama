@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Todo lo de Cloud Storage",
+    "consulta": "resource.type=\"gcs_bucket\""
+  },
+  {
+    "titulo": "Cambios de permisos en buckets",
+    "consulta": "protoPayload.methodName=\"storage.setIamPermissions\""
+  },
+  {
+    "titulo": "Algo se hizo público (allUsers)",
+    "consulta": "protoPayload.methodName=\"storage.setIamPermissions\"\nprotoPayload.serviceData.policyDelta.bindingDeltas.member=\"allUsers\""
+  },
+  {
+    "titulo": "Solo la ADICIÓN de allUsers (recomendada)",
+    "consulta": "protoPayload.methodName=\"storage.setIamPermissions\"\nprotoPayload.serviceData.policyDelta.bindingDeltas.member=\"allUsers\"\nprotoPayload.serviceData.policyDelta.bindingDeltas.action=\"ADD\""
+  },
+  {
+    "titulo": "Público para allUsers o allAuthenticatedUsers",
+    "consulta": "protoPayload.methodName=\"storage.setIamPermissions\" AND (protoPayload.serviceData.policyDelta.bindingDeltas.member=\"allUsers\" OR protoPayload.serviceData.policyDelta.bindingDeltas.member=\"allAuthenticatedUsers\")"
+  },
+  {
+    "titulo": "Llaves de cuenta de servicio creadas",
+    "consulta": "protoPayload.methodName=\"google.iam.admin.v1.CreateServiceAccountKey\""
+  },
+  {
+    "titulo": "Solo errores",
+    "consulta": "severity>=ERROR"
+  },
+  {
+    "titulo": "Eventos de una cuenta de servicio",
+    "consulta": "protoPayload.authenticationInfo.principalEmail=\"app-pagos@tiendapuravida-dev.iam.gserviceaccount.com\""
+  },
+  {
+    "titulo": "Sin lecturas de objetos (NOT)",
+    "consulta": "resource.type=\"gcs_bucket\" AND NOT protoPayload.methodName=\"storage.objects.get\""
+  },
+  {
+    "titulo": "Regex sobre el método",
+    "consulta": "protoPayload.methodName=~\"^storage\\.(set|get)IamPermissions$\""
+  }
+]
